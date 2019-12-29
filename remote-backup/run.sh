@@ -24,7 +24,7 @@ function add-ssh-key {
         echo "    HostName ${SSH_HOST}"
         echo "    User ${SSH_USER}"
         echo "    Port ${SSH_PORT}"
-        echo "    StrictHostKeyChecking no"
+        echo "    StrictHostKeyChecking accept-new"
     ) > "${HOME}/.ssh/config"
 
     while read -r line; do
